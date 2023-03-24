@@ -1,103 +1,43 @@
-,d_name,d_speciality
-0,"Dr. Amy Doherty, DO",Family Medicine
-1,"Dr. Mark Bradley, DO",Family Medicine
-2,"Dr. Samuel Stevens, MD",Family Medicine
-3,"Dr. Robert Pollan, DDS",Dentistry
-4,"Dr. Mon Yee, MD",Family Medicine
-5,Natalie Peters,Integrative Medicine
-6,"Dr. Jeanine Kies, DO",Family Medicine
-7,"Dr. Chris Harkin, MD",Family Medicine
-8,"Dr. Tamim Sifri, DDS",Dentistry
-9,"Dr. Brett Barkimer, MD",Family Medicine
-10,"Dr. Ellen Spiering, MD",Family Medicine
-11,"Dr. Ann Stein, MD",Family Medicine
-12,"Dr. Martin Cleary, MD",Family Medicine
-13,"Dr. Russell Hermus, MD",Family Medicine
-14,"Dr. George Leydon, DO",Family Medicine
-15,"Dr. Joseph Berg, DO",Family Medicine
-16,"Dr. Nilam Raval, MD",Family Medicine
-17,"Dr. Derek Clevidence, MD",Family Medicine
-18,"Dr. Eric Uting, DO",Family Medicine
-19,"Dr. Susan Kreckman, MD",Family Medicine
-20,"Dr. Jill Pogorelec, DO",Family Medicine
-21,"Dr. Rosemarie Schumacher, MD",Family Medicine
-22,"Dr. Robert Edwards, MD",Family Medicine
-23,"Dr. Nathan Hayes, DO",Family Medicine
-24,"Dr. Rebecca Bull, MD",Family Medicine
-25,"Dr. Julie Sager, MD",Family Medicine
-26,"Dr. Katherine Porter, DO",Family Medicine
-27,"Dr. Stefen McVoy, MD",Family Medicine
-28,"Dr. Samantha Sharp, MD",Family Medicine
-29,"Dr. Anna Veach, DO",Family Medicine
-30,"Dr. Jonas Lee, MD",Family Medicine
-31,"Dr. Jody Epstein, MD",Family Medicine
-32,"Dr. Sean Duffy, MD",Family Medicine
-33,"Dr. Jared Dubey, DO",Family Medicine
-34,"Dr. Kirsten Rindfleisch, MD",Family Medicine
-35,"Dr. Jessica Dalby, MD",Family Medicine
-36,"Dr. Andrea Martonffy, MD",Family Medicine
-37,"Dr. Jason Hampton, MD",Family Medicine
-38,"Dr. Sadie Mitten, MD",Family Medicine
-39,"Dr. Sarah Fox, MD",Family Medicine
-40,"Dr. Peter Mullin, MD",Family Medicine
-41,"Dr. Christina Quale, MD",Family Medicine
-42,"Dr. Gary Grunow, MD",Family Medicine
-43,"Dr. Lucas Kuehn, MD",Family Medicine
-44,"Dr. Joanna Bisgrove, MD",Family Medicine
-45,"Dr. Sarah Horowitz, MD",Family Medicine
-46,"Dr. Christina Hook, MD",Family Medicine
-47,"Dr. William Ranum Jr, MD",Family Medicine
-48,"Dr. Peter Harnish, MD",Family Medicine
-49,"Dr. Rachel Keith, DO",Family Medicine
-50,"Dr. Kathryn Dalsing, MD",Family Medicine
-51,"Dr. Emily Jewell, DO",Family Medicine
-52,"Dr. Adam Buhalog, MD",Family Medicine
-53,"Dr. Renee Fohl, MD",Family Medicine
-54,"Dr. Chelsea Thibodeau, DO",Family Medicine
-55,"Dr. Jonathan Takahashi, MD",Family Medicine
-56,"Dr. Ravi Hirekatur, MD",Family Medicine
-57,"Dr. Nicole Weathers, MD",Family Medicine
-58,"Dr. Evan Nolander, DO",Family Medicine
-59,"Dr. David Kiefer, MD",Family Medicine
-60,"Dr. Kristina Espinoza, MD",Family Medicine
-61,"Dr. Diane Anderson, MD",Family Medicine
-62,"Dr. Matthew Swedlund, MD",Family Medicine
-63,"Dr. Nicole Hemkes, MD",Family Medicine
-64,"Dr. Mary Thompson, MD",Family Medicine
-65,"Dr. Adrienne Hampton, MD",Family Medicine
-66,"Dr. Ronak Mehta, MD",Family Medicine
-67,"Dr. Trisha McCormick, DO",Family Medicine
-68,"Dr. Jeffrey McGuire, MD",Family Medicine
-69,"Dr. Curtis Bush, MD",Family Medicine
-70,"Dr. Brian Arndt, MD",Family Medicine
-71,"Dr. Sarah James, DO",Family Medicine
-72,"Dr. Katharine Greenfield, MD",Family Medicine
-73,"Dr. Lauren Mixtacki, MD",Family Medicine
-74,"Dr. Jennifer Shafer, MD",Family Medicine
-75,"Dr. Karina Atwell, MD",Family Medicine
-76,"Dr. Eve Paretsky, MD",Family Medicine
-77,"Dr. Catherine James, MD",Family Medicine
-78,"Dr. Jennifer Edgoose, MD",Family Medicine
-79,"Dr. Magnolia Larson, DO",Family Medicine
-80,"Dr. Jennifer Lochner, MD",Family Medicine
-81,"Dr. William Schwab, MD",Family Medicine
-82,"Dr. William Kinsey, MD",Family Medicine
-83,"Dr. Diane Bussan, MD",Family Medicine
-84,"Dr. Sarjoo Patel, MD",Family Medicine
-85,"Dr. Jonathan Fricke, MD",Family Medicine
-86,"Dr. Joseph Eichenseher, MD",Family Medicine
-87,"Dr. Peggy Stickney, MD",Family Medicine
-88,"Dr. Albert Musa, MD",Family Medicine
-89,"Dr. Furkhan Kachhawala, MD",Family Medicine
-90,"Dr. Paul Mannino, MD",Family Medicine
-91,"Kimberly Moreland, APNP",Nursing (Nurse Practitioner)
-92,"Dr. Robert Przybelski, MD",Family Medicine
-93,"Dr. Victoria Vollrath, MD",Family Medicine
-94,"Dr. Thomas Hartjes, MD",Family Medicine
-95,"Dr. Stacy Loerch, MD",Family Medicine
-96,"Dr. Gonzalo Ruiz Jr, MD",Family Medicine
-97,"Dr. Lisa Brinn, MD",Family Medicine
-98,"Dr. Ann Stanger, MD",Family Medicine
-99,"Dr. Sheryl Spitzer-Resnick, MD",Women's Health Medicine
-100,"Dr. Randy Krszjzaniek, MD",Family Medicine
-101,"Dr. Karen Fennema, MD",Family Medicine
+,d_name,d_speciality,total_score,total_num_rate,5star,5_percentage,4star,4_percentage,3star,3_percentage,2star,2_percentage,1star,1_percentage
+0,"Dr. Amy Doherty, DO",Family Medicine,5.0,Based on 32 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+1,"Dr. Mark Bradley, DO",Family Medicine,4.9,Based on 122 ratings,5 Star,96%,4 Star,3%,3 Star,0%,2 Star,0%,1 Star,1%
+2,"Dr. Samuel Stevens, MD",Family Medicine,5.0,Based on 61 ratings,5 Star,97%,4 Star,3%,3 Star,0%,2 Star,0%,1 Star,0%
+3,"Dr. Robert Pollan, DDS",Dentistry,5.0,Based on 5 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+4,"Dr. Mon Yee, MD",Family Medicine,4.8,Based on 33 ratings,5 Star,94%,4 Star,0%,3 Star,0%,2 Star,3%,1 Star,3%
+5,Natalie Peters,Integrative Medicine,5.0,Based on 98 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+6,"Dr. Jeanine Kies, DO",Family Medicine,4.6,Based on 107 ratings,5 Star,88%,4 Star,3%,3 Star,0%,2 Star,1%,1 Star,8%
+7,"Dr. Chris Harkin, MD",Family Medicine,5.0,Based on 15 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+8,"Dr. Tamim Sifri, DDS",Dentistry,5.0,Based on 1 rating,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+9,"Dr. Brett Barkimer, MD",Family Medicine,4.9,Based on 95 ratings,5 Star,97%,4 Star,1%,3 Star,0%,2 Star,0%,1 Star,2%
+10,"Dr. Ellen Spiering, MD",Family Medicine,4.9,Based on 21 ratings,5 Star,90%,4 Star,10%,3 Star,0%,2 Star,0%,1 Star,0%
+11,"Dr. Ann Stein, MD",Family Medicine,4.8,Based on 12 ratings,5 Star,92%,4 Star,0%,3 Star,8%,2 Star,0%,1 Star,0%
+12,"Dr. Martin Cleary, MD",Family Medicine,4.9,Based on 34 ratings,5 Star,97%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,3%
+13,"Dr. Russell Hermus, MD",Family Medicine,4.7,Based on 17 ratings,5 Star,88%,4 Star,6%,3 Star,0%,2 Star,0%,1 Star,6%
+14,"Dr. George Leydon, DO",Family Medicine,4.7,Based on 16 ratings,5 Star,88%,4 Star,6%,3 Star,0%,2 Star,0%,1 Star,6%
+15,"Dr. Joseph Berg, DO",Family Medicine,5.0,Based on 3 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+16,"Dr. Nilam Raval, MD",Family Medicine,4.6,Based on 12 ratings,5 Star,83%,4 Star,8%,3 Star,0%,2 Star,0%,1 Star,8%
+17,"Dr. Derek Clevidence, MD",Family Medicine,4.6,Based on 12 ratings,5 Star,83%,4 Star,8%,3 Star,0%,2 Star,0%,1 Star,8%
+18,"Dr. Eric Uting, DO",Family Medicine,4.9,Based on 42 ratings,5 Star,95%,4 Star,2%,3 Star,0%,2 Star,0%,1 Star,2%
+19,"Dr. Susan Kreckman, MD",Family Medicine,4.9,Based on 40 ratings,5 Star,95%,4 Star,3%,3 Star,0%,2 Star,3%,1 Star,0%
+20,"Dr. Jill Pogorelec, DO",Family Medicine,4.9,Based on 50 ratings,5 Star,98%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,2%
+21,"Dr. Rosemarie Schumacher, MD",Family Medicine,5.0,Based on 6 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+22,"Dr. Robert Edwards, MD",Family Medicine,5.0,Based on 4 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+23,"Dr. Nathan Hayes, DO",Family Medicine,5.0,Based on 5 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+24,"Dr. Rebecca Bull, MD",Family Medicine,5.0,Based on 4 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+25,"Dr. Julie Sager, MD",Family Medicine,5.0,Based on 1 rating,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+26,"Dr. Katherine Porter, DO",Family Medicine,5.0,Based on 1 rating,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+27,"Dr. Stefen McVoy, MD",Family Medicine,5.0,Based on 1 rating,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+28,"Dr. Samantha Sharp, MD",Family Medicine,5.0,Based on 8 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+29,"Dr. Anna Veach, DO",Family Medicine,5.0,Based on 1 rating,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+30,"Dr. Jonas Lee, MD",Family Medicine,5.0,Based on 2 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+31,"Dr. Jody Epstein, MD",Family Medicine,5.0,Based on 2 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+32,"Dr. Sean Duffy, MD",Family Medicine,5.0,Based on 1 rating,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+33,"Dr. Jared Dubey, DO",Family Medicine,5.0,Based on 1 rating,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+34,"Dr. Kirsten Rindfleisch, MD",Family Medicine,5.0,Based on 2 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+35,"Dr. Jessica Dalby, MD",Family Medicine,5.0,Based on 2 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+36,"Dr. Andrea Martonffy, MD",Family Medicine,5.0,Based on 1 rating,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+37,"Dr. Jason Hampton, MD",Family Medicine,5.0,Based on 5 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+38,"Dr. Sadie Mitten, MD",Family Medicine,5.0,Based on 2 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+39,"Dr. Sarah Fox, MD",Family Medicine,5.0,Based on 2 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+40,"Dr. Peter Mullin, MD",Family Medicine,5.0,Based on 5 ratings,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
+41,"Dr. Christina Quale, MD",Family Medicine,5.0,Based on 1 rating,5 Star,100%,4 Star,0%,3 Star,0%,2 Star,0%,1 Star,0%
