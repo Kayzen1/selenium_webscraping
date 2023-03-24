@@ -1,83 +1,103 @@
-,d_name
-0,"Dr. Amy Doherty, DO"
-1,"Dr. Mark Bradley, DO"
-2,"Dr. Samuel Stevens, MD"
-3,"Dr. Robert Pollan, DDS"
-4,"Dr. Mon Yee, MD"
-5,Natalie Peters
-6,"Dr. Jeanine Kies, DO"
-7,"Dr. Chris Harkin, MD"
-8,"Dr. Tamim Sifri, DDS"
-9,"Dr. Brett Barkimer, MD"
-10,"Dr. Ellen Spiering, MD"
-11,"Dr. Ann Stein, MD"
-12,"Dr. Martin Cleary, MD"
-13,"Dr. Russell Hermus, MD"
-14,"Dr. George Leydon, DO"
-15,"Dr. Joseph Berg, DO"
-16,"Dr. Nilam Raval, MD"
-17,"Dr. Derek Clevidence, MD"
-18,"Dr. Eric Uting, DO"
-19,"Dr. Susan Kreckman, MD"
-20,"Dr. Jill Pogorelec, DO"
-21,"Dr. Rosemarie Schumacher, MD"
-22,"Dr. Robert Edwards, MD"
-23,"Dr. Nathan Hayes, DO"
-24,"Dr. Rebecca Bull, MD"
-25,"Dr. Julie Sager, MD"
-26,"Dr. Katherine Porter, DO"
-27,"Dr. Stefen McVoy, MD"
-28,"Dr. Samantha Sharp, MD"
-29,"Dr. Anna Veach, DO"
-30,"Dr. Jonas Lee, MD"
-31,"Dr. Jody Epstein, MD"
-32,"Dr. Sean Duffy, MD"
-33,"Dr. Jared Dubey, DO"
-34,"Dr. Kirsten Rindfleisch, MD"
-35,"Dr. Jessica Dalby, MD"
-36,"Dr. Andrea Martonffy, MD"
-37,"Dr. Jason Hampton, MD"
-38,"Dr. Sadie Mitten, MD"
-39,"Dr. Sarah Fox, MD"
-40,"Dr. Peter Mullin, MD"
-41,"Dr. Christina Quale, MD"
-42,"Dr. Gary Grunow, MD"
-43,"Dr. Lucas Kuehn, MD"
-44,"Dr. Joanna Bisgrove, MD"
-45,"Dr. Sarah Horowitz, MD"
-46,"Dr. Christina Hook, MD"
-47,"Dr. William Ranum Jr, MD"
-48,"Dr. Peter Harnish, MD"
-49,"Dr. Rachel Keith, DO"
-50,"Dr. Kathryn Dalsing, MD"
-51,"Dr. Emily Jewell, DO"
-52,"Dr. Adam Buhalog, MD"
-53,"Dr. Renee Fohl, MD"
-54,"Dr. Chelsea Thibodeau, DO"
-55,"Dr. Jonathan Takahashi, MD"
-56,"Dr. Ravi Hirekatur, MD"
-57,"Dr. Nicole Weathers, MD"
-58,"Dr. Evan Nolander, DO"
-59,"Dr. David Kiefer, MD"
-60,"Dr. Kristina Espinoza, MD"
-61,"Dr. Diane Anderson, MD"
-62,"Dr. Matthew Swedlund, MD"
-63,"Dr. Nicole Hemkes, MD"
-64,"Dr. Mary Thompson, MD"
-65,"Dr. Adrienne Hampton, MD"
-66,"Dr. Ronak Mehta, MD"
-67,"Dr. Trisha McCormick, DO"
-68,"Dr. Jeffrey McGuire, MD"
-69,"Dr. Curtis Bush, MD"
-70,"Dr. Brian Arndt, MD"
-71,"Dr. Sarah James, DO"
-72,"Dr. Katharine Greenfield, MD"
-73,"Dr. Lauren Mixtacki, MD"
-74,"Dr. Jennifer Shafer, MD"
-75,"Dr. Karina Atwell, MD"
-76,"Dr. Eve Paretsky, MD"
-77,"Dr. Catherine James, MD"
-78,"Dr. Jennifer Edgoose, MD"
-79,"Dr. Magnolia Larson, DO"
-80,"Dr. Jennifer Lochner, MD"
-81,"Dr. William Schwab, MD"
+,d_name,d_speciality
+0,"Dr. Amy Doherty, DO",Family Medicine
+1,"Dr. Mark Bradley, DO",Family Medicine
+2,"Dr. Samuel Stevens, MD",Family Medicine
+3,"Dr. Robert Pollan, DDS",Dentistry
+4,"Dr. Mon Yee, MD",Family Medicine
+5,Natalie Peters,Integrative Medicine
+6,"Dr. Jeanine Kies, DO",Family Medicine
+7,"Dr. Chris Harkin, MD",Family Medicine
+8,"Dr. Tamim Sifri, DDS",Dentistry
+9,"Dr. Brett Barkimer, MD",Family Medicine
+10,"Dr. Ellen Spiering, MD",Family Medicine
+11,"Dr. Ann Stein, MD",Family Medicine
+12,"Dr. Martin Cleary, MD",Family Medicine
+13,"Dr. Russell Hermus, MD",Family Medicine
+14,"Dr. George Leydon, DO",Family Medicine
+15,"Dr. Joseph Berg, DO",Family Medicine
+16,"Dr. Nilam Raval, MD",Family Medicine
+17,"Dr. Derek Clevidence, MD",Family Medicine
+18,"Dr. Eric Uting, DO",Family Medicine
+19,"Dr. Susan Kreckman, MD",Family Medicine
+20,"Dr. Jill Pogorelec, DO",Family Medicine
+21,"Dr. Rosemarie Schumacher, MD",Family Medicine
+22,"Dr. Robert Edwards, MD",Family Medicine
+23,"Dr. Nathan Hayes, DO",Family Medicine
+24,"Dr. Rebecca Bull, MD",Family Medicine
+25,"Dr. Julie Sager, MD",Family Medicine
+26,"Dr. Katherine Porter, DO",Family Medicine
+27,"Dr. Stefen McVoy, MD",Family Medicine
+28,"Dr. Samantha Sharp, MD",Family Medicine
+29,"Dr. Anna Veach, DO",Family Medicine
+30,"Dr. Jonas Lee, MD",Family Medicine
+31,"Dr. Jody Epstein, MD",Family Medicine
+32,"Dr. Sean Duffy, MD",Family Medicine
+33,"Dr. Jared Dubey, DO",Family Medicine
+34,"Dr. Kirsten Rindfleisch, MD",Family Medicine
+35,"Dr. Jessica Dalby, MD",Family Medicine
+36,"Dr. Andrea Martonffy, MD",Family Medicine
+37,"Dr. Jason Hampton, MD",Family Medicine
+38,"Dr. Sadie Mitten, MD",Family Medicine
+39,"Dr. Sarah Fox, MD",Family Medicine
+40,"Dr. Peter Mullin, MD",Family Medicine
+41,"Dr. Christina Quale, MD",Family Medicine
+42,"Dr. Gary Grunow, MD",Family Medicine
+43,"Dr. Lucas Kuehn, MD",Family Medicine
+44,"Dr. Joanna Bisgrove, MD",Family Medicine
+45,"Dr. Sarah Horowitz, MD",Family Medicine
+46,"Dr. Christina Hook, MD",Family Medicine
+47,"Dr. William Ranum Jr, MD",Family Medicine
+48,"Dr. Peter Harnish, MD",Family Medicine
+49,"Dr. Rachel Keith, DO",Family Medicine
+50,"Dr. Kathryn Dalsing, MD",Family Medicine
+51,"Dr. Emily Jewell, DO",Family Medicine
+52,"Dr. Adam Buhalog, MD",Family Medicine
+53,"Dr. Renee Fohl, MD",Family Medicine
+54,"Dr. Chelsea Thibodeau, DO",Family Medicine
+55,"Dr. Jonathan Takahashi, MD",Family Medicine
+56,"Dr. Ravi Hirekatur, MD",Family Medicine
+57,"Dr. Nicole Weathers, MD",Family Medicine
+58,"Dr. Evan Nolander, DO",Family Medicine
+59,"Dr. David Kiefer, MD",Family Medicine
+60,"Dr. Kristina Espinoza, MD",Family Medicine
+61,"Dr. Diane Anderson, MD",Family Medicine
+62,"Dr. Matthew Swedlund, MD",Family Medicine
+63,"Dr. Nicole Hemkes, MD",Family Medicine
+64,"Dr. Mary Thompson, MD",Family Medicine
+65,"Dr. Adrienne Hampton, MD",Family Medicine
+66,"Dr. Ronak Mehta, MD",Family Medicine
+67,"Dr. Trisha McCormick, DO",Family Medicine
+68,"Dr. Jeffrey McGuire, MD",Family Medicine
+69,"Dr. Curtis Bush, MD",Family Medicine
+70,"Dr. Brian Arndt, MD",Family Medicine
+71,"Dr. Sarah James, DO",Family Medicine
+72,"Dr. Katharine Greenfield, MD",Family Medicine
+73,"Dr. Lauren Mixtacki, MD",Family Medicine
+74,"Dr. Jennifer Shafer, MD",Family Medicine
+75,"Dr. Karina Atwell, MD",Family Medicine
+76,"Dr. Eve Paretsky, MD",Family Medicine
+77,"Dr. Catherine James, MD",Family Medicine
+78,"Dr. Jennifer Edgoose, MD",Family Medicine
+79,"Dr. Magnolia Larson, DO",Family Medicine
+80,"Dr. Jennifer Lochner, MD",Family Medicine
+81,"Dr. William Schwab, MD",Family Medicine
+82,"Dr. William Kinsey, MD",Family Medicine
+83,"Dr. Diane Bussan, MD",Family Medicine
+84,"Dr. Sarjoo Patel, MD",Family Medicine
+85,"Dr. Jonathan Fricke, MD",Family Medicine
+86,"Dr. Joseph Eichenseher, MD",Family Medicine
+87,"Dr. Peggy Stickney, MD",Family Medicine
+88,"Dr. Albert Musa, MD",Family Medicine
+89,"Dr. Furkhan Kachhawala, MD",Family Medicine
+90,"Dr. Paul Mannino, MD",Family Medicine
+91,"Kimberly Moreland, APNP",Nursing (Nurse Practitioner)
+92,"Dr. Robert Przybelski, MD",Family Medicine
+93,"Dr. Victoria Vollrath, MD",Family Medicine
+94,"Dr. Thomas Hartjes, MD",Family Medicine
+95,"Dr. Stacy Loerch, MD",Family Medicine
+96,"Dr. Gonzalo Ruiz Jr, MD",Family Medicine
+97,"Dr. Lisa Brinn, MD",Family Medicine
+98,"Dr. Ann Stanger, MD",Family Medicine
+99,"Dr. Sheryl Spitzer-Resnick, MD",Women's Health Medicine
+100,"Dr. Randy Krszjzaniek, MD",Family Medicine
+101,"Dr. Karen Fennema, MD",Family Medicine
