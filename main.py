@@ -1,14 +1,12 @@
-from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 from tqdm import tqdm
-import pandas as pd
-import numpy as np
-from selenium.common.exceptions import StaleElementReferenceException, NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.service import Service
 import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import csv
 
 def iselement(browser, cssselector):
     try:
@@ -18,7 +16,7 @@ def iselement(browser, cssselector):
         return False
 
 starttime = time.time()
-PATH = "/Users/kay/PycharmProjects/selenium_health/chromedriver"
+PATH = "/Users/kay/PycharmProjects/selenium_health/selenium_webscraping/chromedriver"
 service = Service(PATH)
 driver = WebDriver(service=service)
 driver.implicitly_wait(1)
@@ -50,13 +48,13 @@ while True:
 
 
 all_details = []
-
+rows = []
 for i in tqdm(link_list):
     forloopstarttime = time.time()
     driver = WebDriver(service=service)
     driver.get(i)
     d_name = driver.find_element(by=By.TAG_NAME, value='h1').text
-    d_speciality = driver.find_element(By.CSS_SELECTOR, 'span[data-qa-target = "ProviderDisplaySpeciality"]')
+    d_speciality = driver.find_element(By.CSS_SELECTOR, 'span[data-qa-target = "ProviderDisplaySpeciality"]').text
     if (iselement(driver, 'div.ratings-wrapper')):
         total_score = driver.find_element(By.CSS_SELECTOR, 'div.overall-rating p').text
         total_survey_count = driver.find_element(By.CSS_SELECTOR, 'div.overall-rating div p').text
@@ -92,7 +90,7 @@ for i in tqdm(link_list):
         try:
             # click on "more" tag can show both positive tags and negative tags
             more_tags_button = WebDriverWait(driver, 2).until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.review-tagging-summary__more button')))
+                EC.element_to_be_clickable((By.CSS_SELECTOR, 'button.link--secondary')))
             driver.execute_script("arguments[0].click();", more_tags_button)
         except:
             pass
@@ -113,30 +111,57 @@ for i in tqdm(link_list):
         except:
             pass
 
-    tempJ = {
-        'd_name': d_name,
-        'd_speciality': d_speciality,
-        'total_score': total_score,
-        'total_num_rate': total_survey_count,
-        '5star': five_star,
-        '5_percentage': five_star_percentage,
-        '4star': four_star,
-        '4_percentage': four_star_percentage,
-        '3star': three_star,
-        '3_percentage': three_star_percentage,
-        '2star': two_star,
-        '2_percentage': two_star_percentage,
-        '1star': one_star,
-        '1_percentage': one_star_percentage,
-        'positive_tags': positive_tags,
-        'negative_tags': negative_tags,
-    }
-    all_details.append(tempJ)
+        try:
+            # click on "more" comments
+            more_reviews_button = WebDriverWait(driver, 2).until(
+                EC.element_to_be_clickable((By.CSS_SELECTOR, 'a.c-comment-list__show-more')))
+            driver.execute_script("arguments[0].click();", more_reviews_button)
+        except:
+            pass
+
+        try:
+            # commentlist = []
+            comments = WebDriverWait(driver, 2).until(
+                EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'div[data-qa-target="user-comment"]')))
+            for comment in comments:
+                comment_text = comment.text
+                rows.append([d_name, d_speciality,total_score,total_survey_count,five_star, five_star_percentage, four_star, four_star_percentage,
+                             three_star, three_star_percentage, two_star,two_star_percentage, one_star, one_star_percentage, positive_tags, negative_tags,
+                             comment_text])
+        except:
+            pass
+
+    # tempJ = {
+    #     'd_name': d_name,
+    #     'd_speciality': d_speciality,
+    #     'total_score': total_score,
+    #     'total_num_rate': total_survey_count,
+    #     '5star': five_star,
+    #     '5_percentage': five_star_percentage,
+    #     '4star': four_star,
+    #     '4_percentage': four_star_percentage,
+    #     '3star': three_star,
+    #     '3_percentage': three_star_percentage,
+    #     '2star': two_star,
+    #     '2_percentage': two_star_percentage,
+    #     '1star': one_star,
+    #     '1_percentage': one_star_percentage,
+    #     'positive_tags': positive_tags,
+    #     'negative_tags': negative_tags,
+    # }
+    # all_details.append(tempJ)
     forloopendtime = time.time()
     print(forloopendtime-forloopstarttime)
     driver.close()
 
-df = pd.DataFrame(all_details)
-df.to_csv('doctor.csv')
+# df = pd.DataFrame(all_details)
+# df.to_csv('doctor.csv')
+
+
+with open('doctor.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    for row in rows:
+        writer.writerow(row)
+
 endtime = time.time()
 print(endtime-starttime)
