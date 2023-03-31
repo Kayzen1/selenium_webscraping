@@ -44,8 +44,6 @@ while True:
         break
     # click to next page
     driver.execute_script("arguments[0].click();", nextpage[-1])
-    # WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'card-name')))
-
 
 all_details = []
 rows = []
@@ -88,10 +86,10 @@ for i in tqdm(link_list):
     negative_tags = []
     if (iselement(driver, 'div.review-tagging-summary')):
         try:
-            # click on "more" tag can show both positive tags and negative tags
-            more_tags_button = WebDriverWait(driver, 2).until(
+            # click on "more" buttons
+            more_button = WebDriverWait(driver, 2).until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, 'button.link--secondary')))
-            driver.execute_script("arguments[0].click();", more_tags_button)
+            driver.execute_script("arguments[0].click();", more_button)
         except:
             pass
 
@@ -111,16 +109,39 @@ for i in tqdm(link_list):
         except:
             pass
 
-        try:
-            # click on "more" comments
-            more_reviews_button = WebDriverWait(driver, 2).until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, 'a.c-comment-list__show-more')))
-            driver.execute_script("arguments[0].click();", more_reviews_button)
-        except:
-            pass
+        num_reviews_before = len(driver.find_elements(By.CSS_SELECTOR, 'div.c-single-comment__comment'))
+        while True:
+            try:
+                # click on "more reviews"button
+                more_reviews_button = WebDriverWait(driver, 2).until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, 'a.c-comment-list__show-more')))
+
+                driver.execute_script("arguments[0].click();", more_reviews_button)
+                time.sleep(2)
+                num_reviews_after = len(driver.find_elements(By.CSS_SELECTOR, 'div.c-single-comment__comment'))
+                print(num_reviews_after, num_reviews_before)
+
+                if num_reviews_after == num_reviews_before:
+                    print("No new reviews loaded. End of reviews.")
+                    break
+                num_reviews_before = num_reviews_after
+                more_comment_detail = None
+
+                # check if "more details" button is present
+                try:
+                    more_comment_detail = WebDriverWait(driver, 1).until(
+                        EC.element_to_be_clickable(
+                            (By.CSS_SELECTOR, 'div.c-single-comment__more-details button.link--secondary')))
+                    driver.execute_script("arguments[0].click();", more_comment_detail)
+                except:
+                    pass
+
+            except:
+                print("No 'more' button found on the page.")
+                break
+
 
         try:
-            # commentlist = []
             comments = WebDriverWait(driver, 2).until(
                 EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'div[data-qa-target="user-comment"]')))
             for comment in comments:
