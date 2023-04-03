@@ -66,7 +66,7 @@ def get_doctor_details(link):
     d_name = driver.find_element(By.CSS_SELECTOR, 'div h1').text
     print("1:", d_name)
 
-    if (iselement(driver, 'd_speciality')):
+    if (iselement(driver, 'span[data-qa-target = "ProviderDisplaySpeciality"]')):
         d_speciality = driver.find_element(By.CSS_SELECTOR, 'span[data-qa-target = "ProviderDisplaySpeciality"]').text
     else:
         d_speciality = 'NA'
@@ -237,9 +237,13 @@ with ThreadPoolExecutor(max_workers=10) as executor:
 # df = pd.DataFrame(all_details)
 # df.to_csv('doctor.csv')
 
+header = ['d_name', 'd_speciality', 'total_score', 'total_survey_count', 'five_star', 'five_star_percentage', 'four_star',
+          'four_star_percentage', 'three_star', 'three_star_percentage', 'two_star', 'two_star_percentage', 'one_star',
+          'one_star_percentage','positive_tags', 'negative_tags', 'comment_text']
 
 with open('doctor.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
+    writer.writerow(header)
     for row in rows:
         writer.writerow(row)
 
