@@ -32,40 +32,6 @@ def get_driver():
     driver.implicitly_wait(1)
     return driver
 
-
-'''
-If target page number is 99, then this function will append all links from page 1 to page 99 to a list
-'''
-
-def get_doc_linklist(url):
-    driver = get_driver()
-    driver.get(url)
-    link_list = []
-    page_count = 0
-
-    while True:
-        doctor_links = driver.find_elements(by=By.CLASS_NAME, value='card-name')
-        # Find doctors' personal webpage links
-        for doctor_link in doctor_links:
-            link = doctor_link.find_element(by=By.TAG_NAME, value='a')
-            # Store each link to an empty list
-            link_list.append(link.get_attribute('href'))
-
-        nextpage = driver.find_elements(By.XPATH, '//*[@id="search-results"]/div/div[2]/div[2]/div[1]/nav/ul/li/a')
-        page_count = page_count + 1
-
-        if page_count == 99:
-            break
-        # Click to next page
-        driver.execute_script("arguments[0].click();", nextpage[-1])
-    driver.close()
-    return link_list
-
-'''
-Get all doctor's information. Including name, speciality, tags and comments
-'''
-
-
 def get_doctor_details(link):
     driver = get_driver()
     driver.get(link)
@@ -207,8 +173,8 @@ def get_doctor_details(link):
     else:
         try:
             more_comment_detail = WebDriverWait(driver, 3).until(
-                EC.presence_of_all_elements_located(
-                    (By.CSS_SELECTOR, 'div.c-single-comment__more-details button.link--secondary')))
+            EC.presence_of_all_elements_located(
+                (By.CSS_SELECTOR, 'div.c-single-comment__more-details button.link--secondary')))
             for button in more_comment_detail:
                 button.click()
                 # print("have no more button on first page, and click")
@@ -241,18 +207,9 @@ def get_doctor_details(link):
     driver.quit()
     return rows
 
-
 starttime = time.time()
-url = "https://www.healthgrades.com/usearch?what=Family%20Medicine&distances=National&rating=1&practicing_specialties=ps1196&pageNum=1&sort.provider=bestmatch"
-link_list = get_doc_linklist(url)
-
 rows = []
-
-# Multithreading. Click on each link and process get_doctor_details(each_link)
-with ThreadPoolExecutor(max_workers=10) as executor:
-    for _ in tqdm(executor.map(get_doctor_details, link_list), total=len(link_list)):
-        pass
-
+get_doctor_details("https://www.healthgrades.com/physician/dr-syed-haider-gc525")
 header = ['d_name', 'd_speciality', 'total_score', 'total_survey_count', 'five_star', 'five_star_percentage',
           'four_star',
           'four_star_percentage', 'three_star', 'three_star_percentage', 'two_star', 'two_star_percentage', 'one_star',
