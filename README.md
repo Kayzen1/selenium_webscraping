@@ -1,10 +1,10 @@
-# Doctor Reviews Scraper
+# 🎉 Doctor Reviews Scraper
 
 This project is a web scraper built using Python and Selenium to extract detailed doctor reviews and ratings from a medical website for further research purpose. The scraper collects data such as doctor names, specialties, ratings, and user comments, and saves the results into a CSV file.
 
 ---
 
-## Features
+## 📍 Features
 - **Dynamic Web Scraping**: Extracts multiple pages of data using Selenium.
 - **Multithreading**: Accelerates scraping by processing multiple pages concurrently with `ThreadPoolExecutor`.
 - **Comprehensive Data**: Collects doctor details, reviews, tags, and ratings.
@@ -12,7 +12,7 @@ This project is a web scraper built using Python and Selenium to extract detaile
 
 ---
 
-## Installation
+## 🔌 Installation
 
 ### Prerequisites
 1. Install Python (3.7 or higher).
@@ -21,9 +21,9 @@ This project is a web scraper built using Python and Selenium to extract detaile
    ```bash
    pip install selenium tqdm
 
+---
 
-
-## File Structure
+## 📄 File Structure
 ```
 project/
 ├──
@@ -31,6 +31,8 @@ project/
 ├── scraper.py    # Main Python script
 ├── doctor.csv    # Output CSV file
 ```
+
+---
 
 ## Usage
 
@@ -57,6 +59,8 @@ The extracted data will be saved in doctor.csv with the following columns:
 - positive_tags, negative_tags: Lists of positive and negative tags
 - comment_text: User comments
 
+---
+
 ## Code Structure
 
 ### Functions
@@ -80,6 +84,8 @@ with ThreadPoolExecutor(max_workers=10) as executor:
     executor.map(get_doctor_details, link_list)
 ```
 
+---
+
 ## Handling Common Issues
 ### 1. Ad Popups
 Automatically closes popups that obstruct scraping.
@@ -88,6 +94,7 @@ Handles cookie popups that block interaction.
 ### 3. Pagination
 Navigates through multiple pages until the specified limit (99 pages).
 
+---
 
 ## Output
 Here is the link to the [output](doctor.csv)
